@@ -1,0 +1,182 @@
+VÉRTICE PISOS & REVESTIMENTOS - SITE DE DEMONSTRAÇÃO
+=====================================================
+
+Este é um site comercial de demonstração, feito só com HTML, CSS e
+JavaScript puro. A empresa, os produtos, o endereço e os horários são
+FICTÍCIOS. Não existem preços, certificações nem avaliações de clientes.
+
+ANTES DE USAR EM UMA EMPRESA REAL: verifique e substitua todas as
+informações (nome, produtos, medidas, acabamentos, endereço, horários,
+telefone e imagens). Confira também a licença de qualquer foto usada.
+
+
+ARQUIVOS DO PROJETO
+-------------------
+vertice-pisos/
+   index.html   -> estrutura e textos do site
+   style.css    -> cores, layout e responsividade
+   script.js    -> catálogo, filtros, pesquisa, menu e WhatsApp
+   README.txt   -> este guia
+
+Os quatro arquivos precisam ficar JUNTOS, dentro da mesma pasta.
+
+
+1) COMO CRIAR A PASTA
+---------------------
+1. Abra o Explorador de Arquivos (Windows) ou o Finder (Mac).
+2. Vá até a pasta onde você quer guardar o projeto (por exemplo, Documentos).
+3. Clique com o botão direito em um espaço vazio > Novo > Pasta.
+4. Dê o nome:  vertice-pisos
+
+
+2) COMO ABRIR A PASTA NO VISUAL STUDIO CODE
+-------------------------------------------
+1. Abra o Visual Studio Code.
+2. Clique em Arquivo > Abrir Pasta (File > Open Folder).
+3. Escolha a pasta "vertice-pisos" e clique em Selecionar Pasta.
+4. Se aparecer uma pergunta sobre confiar nos autores, clique em Sim.
+
+
+3) COMO CRIAR OS QUATRO ARQUIVOS
+--------------------------------
+1. No lado esquerdo do VS Code (lista de arquivos), passe o mouse sobre o
+   nome da pasta e clique no ícone de "Novo Arquivo" (folha com um +).
+2. Digite o nome exato e aperte Enter. Repita para cada arquivo:
+      index.html
+      style.css
+      script.js
+      README.txt
+3. Atenção: os nomes devem estar exatamente assim, em letras minúsculas
+   (exceto README.txt) e com a extensão correta.
+
+
+4) EM QUAL ARQUIVO COLOCAR CADA CÓDIGO
+--------------------------------------
+- O bloco "ARQUIVO 1 - index.html" vai dentro de index.html
+- O bloco "ARQUIVO 2 - style.css"  vai dentro de style.css
+- O bloco "ARQUIVO 3 - script.js"  vai dentro de script.js
+- O bloco "ARQUIVO 4 - README.txt" vai dentro de README.txt
+
+Copie SOMENTE o que está entre as linhas "INÍCIO DO ARQUIVO" e
+"FIM DO ARQUIVO" (as linhas com ========== não fazem parte do código).
+Clique no arquivo, cole (Ctrl+V) e confira se o código foi colado inteiro.
+
+
+5) COMO SALVAR
+--------------
+Aperte Ctrl+S em cada arquivo (Cmd+S no Mac). Enquanto o nome do arquivo
+aparecer com uma bolinha na aba, ele ainda NÃO foi salvo.
+Dica: Arquivo > Salvar Tudo salva todos de uma vez.
+
+
+6) COMO ABRIR O SITE NO GOOGLE CHROME
+-------------------------------------
+Opção A (a mais simples):
+1. Abra a pasta "vertice-pisos" no Explorador de Arquivos.
+2. Clique com o botão direito em index.html > Abrir com > Google Chrome.
+   (Ou dê dois cliques no arquivo, se o Chrome for seu navegador padrão.)
+
+Opção B (opcional): extensão Live Server do VS Code.
+Ela atualiza a página sozinha quando você salva. NÃO é obrigatória:
+o site funciona normalmente sem instalar nada.
+
+
+7) COMO ATUALIZAR A PÁGINA DEPOIS DE ALTERAR O CÓDIGO
+-----------------------------------------------------
+1. Salve o arquivo alterado (Ctrl+S).
+2. Volte ao Chrome e aperte F5 (ou Ctrl+R).
+3. Se a mudança não aparecer, aperte Ctrl+Shift+R (recarga completa).
+
+
+8) COMO TESTAR OS FILTROS E A PESQUISA
+--------------------------------------
+- Na seção "Nossos produtos", clique em "Porcelanatos": devem aparecer
+  3 produtos. Clique nas outras categorias e confira. "Todos" mostra 12.
+- Digite "madeira" no campo de pesquisa: aparecem Madeira Carvalho e
+  Deck Carvalho.
+- Combine: clique em "Pisos para áreas externas" e digite "deck":
+  aparece só o Deck Carvalho.
+- Digite algo que não existe (ex.: "xyz"): aparece a mensagem de que
+  nenhum produto foi encontrado.
+- Clique em "Limpar" (ou em "Mostrar todos os produtos") para voltar a
+  ver tudo.
+- Clique em um dos quatro cartões de categoria: o catálogo é filtrado.
+
+
+9) COMO TESTAR A VERSÃO PARA CELULAR NO CHROME
+----------------------------------------------
+1. Com o site aberto no Chrome, aperte F12 (ou clique com o botão direito
+   > Inspecionar).
+2. Clique no ícone de celular/tablet no topo do painel que abriu (ou
+   aperte Ctrl+Shift+M).
+3. No topo da página, escolha um aparelho (ex.: iPhone ou Pixel) ou
+   arraste para mudar a largura.
+4. Confira: o menu vira um botão de três linhas, os cartões ficam em
+   uma coluna, e os botões são fáceis de tocar.
+5. Para sair, clique de novo no ícone de celular.
+
+
+10) COMO SUBSTITUIR NOME, ENDEREÇO E WHATSAPP
+---------------------------------------------
+WHATSAPP (um único lugar):
+1. Abra script.js.
+2. No começo do arquivo, no bloco CONFIG, encontre:
+      whatsappNumero: "",
+3. Coloque o número entre as aspas, só com números, com 55 + DDD + número.
+   Exemplo de formato:  whatsappNumero: "5511999999999",
+4. Salve e recarregue a página. Os botões passam a abrir uma conversa no
+   WhatsApp com mensagem inicial já preenchida.
+   Enquanto o número estiver vazio, os botões mostram um aviso e não
+   abrem nenhuma conversa inválida.
+
+ENDEREÇO:
+- Em script.js, altere "endereco" no bloco CONFIG (usado no link do
+  Google Maps).
+- Em index.html, procure por "Avenida dos Autonomistas" (aparece na seção
+  de contato e no rodapé) e troque o texto.
+
+HORÁRIOS: em index.html, procure por "8h às 18h" (seção de contato e
+rodapé) e altere.
+
+NOME DA LOJA: em index.html, procure por "Vértice" e altere os textos
+(título da página, cabeçalho, rodapé). No script.js, ajuste também
+"nomeLoja" e "mensagemGeral" no bloco CONFIG.
+
+PRODUTOS: em script.js, a lista PRODUTOS tem um bloco por produto.
+Edite nome, formato, acabamento, estilo e descrição. Mantenha as aspas,
+as vírgulas e as chaves { } como estão.
+
+
+11) COMO SUBSTITUIR AS IMAGENS
+------------------------------
+As fotos do topo e das categorias vêm de endereços da internet (Unsplash),
+listados no bloco IMAGENS de script.js. Isso significa:
+- É preciso estar conectado à internet para ver essas fotos.
+- A disponibilidade e a licença de cada foto não foram verificadas.
+  Troque por fotos próprias ou com licença confirmada antes de mostrar o
+  site como trabalho real de um cliente.
+
+Para usar fotos suas:
+1. Dentro de "vertice-pisos", crie uma pasta chamada "imagens".
+2. Coloque suas fotos nela (ex.: hero.jpg).
+3. Em script.js, troque a URL pelo caminho, por exemplo:
+      hero: "imagens/hero.jpg",
+
+Se uma foto não carregar, o site mostra um fundo de cor no lugar, então a
+página nunca fica vazia. Os cartões dos produtos NÃO usam fotos: as
+texturas são feitas só com CSS (arquivo style.css, classes que começam
+com "amostra--"). O logotipo também é feito em SVG dentro do HTML.
+
+
+12) LIMITAÇÕES DA VERSÃO ESTÁTICA
+---------------------------------
+- Não há banco de dados: os produtos ficam dentro do script.js.
+- Não há carrinho, pagamento nem login. O objetivo é gerar contatos.
+- O botão de WhatsApp só funciona depois que um número real é configurado.
+- As fotos externas dependem de internet e de os links continuarem ativos.
+- O site ainda não está publicado: para ficar acessível a clientes, é
+  preciso hospedá-lo (uma etapa à parte).
+- Não há garantias de vendas nem de posição no Google. O site tem apenas
+  os metadados básicos de SEO (título e descrição).
+- A verificação do código foi feita por revisão e checagem de sintaxe;
+  o teste visual em navegador precisa ser feito por você (passos 6 a 9).

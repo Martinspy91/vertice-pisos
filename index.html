@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vértice Pisos & Revestimentos | Seu projeto começa pelo chão</title>
+  <meta name="description" content="Vértice Pisos & Revestimentos: porcelanatos, cerâmicas, revestimentos de parede e pisos para áreas externas em Osasco, SP. Site de demonstração.">
+  <meta name="theme-color" content="#292B2A">
+
+  <!-- Favicon simples embutido (não precisa de arquivo extra) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23292B2A'/%3E%3Cpath d='M14 18h12l6 20 6-20h12L32 50z' fill='%23B76546'/%3E%3C/svg%3E">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- Símbolo do logotipo (SVG inline, reutilizado no cabeçalho e no rodapé) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="logo-vertice" viewBox="0 0 48 48">
+      <rect width="48" height="48" rx="10" fill="#292B2A"/>
+      <path d="M10 13h9l5 15 5-15h9L24 39z" fill="#B76546"/>
+      <path d="M24 39l-5-11h10z" fill="#E9DFD0"/>
+    </symbol>
+  </svg>
+
+  <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- ================= CABEÇALHO ================= -->
+  <header class="cabecalho" id="inicio-topo">
+    <div class="container cabecalho__interno">
+      <a class="marca" href="#inicio" aria-label="Vértice Pisos & Revestimentos - ir para o início">
+        <svg class="marca__logo" width="44" height="44" aria-hidden="true"><use href="#logo-vertice"></use></svg>
+        <span class="marca__texto">
+          <strong>Vértice</strong>
+          <small>Pisos & Revestimentos</small>
+        </span>
+      </a>
+
+      <button class="menu-botao" id="menu-botao" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu">
+        <span class="menu-botao__barras" aria-hidden="true"></span>
+      </button>
+
+      <nav class="menu" id="menu" aria-label="Navegação principal">
+        <ul class="menu__lista">
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#produtos">Produtos</a></li>
+          <li><a href="#sobre">Sobre Nós</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+        <a class="btn btn--primario menu__cta" href="#contato" data-whatsapp="geral">Solicitar atendimento</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="inicio" aria-labelledby="hero-titulo">
+      <img class="hero__imagem" data-img="hero" alt="Ambiente sofisticado com piso de porcelanato e decoração contemporânea" width="1600" height="900">
+      <div class="hero__sombra" aria-hidden="true"></div>
+      <div class="container hero__conteudo">
+        <p class="sobretitulo">Vértice Pisos & Revestimentos</p>
+        <h1 id="hero-titulo">Seu projeto começa pelo chão.</h1>
+        <p class="hero__texto">Descubra pisos e revestimentos que transformam ambientes e valorizam cada detalhe do seu projeto.</p>
+        <div class="hero__botoes">
+          <a class="btn btn--primario" href="#produtos">Explorar produtos</a>
+          <a class="btn btn--contorno-claro" href="#contato" data-whatsapp="geral">Fale com um especialista</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CATEGORIAS ================= -->
+    <section class="secao" id="categorias" aria-labelledby="categorias-titulo">
+      <div class="container">
+        <header class="secao__cabecalho">
+          <p class="sobretitulo sobretitulo--escuro">Categorias</p>
+          <h2 id="categorias-titulo">Escolha por tipo de ambiente</h2>
+          <p>Quatro linhas pensadas para diferentes estilos de projeto, do piso da sala ao deck da área de lazer.</p>
+        </header>
+
+        <ul class="categorias">
+          <li>
+            <a class="categoria" href="#produtos" data-categoria="porcelanatos">
+              <span class="categoria__foto"><img data-img="porcelanatos" alt="Sala com piso de porcelanato claro" loading="lazy" width="600" height="450"></span>
+              <span class="categoria__corpo">
+                <strong>Porcelanatos</strong>
+                <span>Superfícies elegantes e resistentes para ambientes sofisticados.</span>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a class="categoria" href="#produtos" data-categoria="ceramicas">
+              <span class="categoria__foto"><img data-img="ceramicas" alt="Ambiente com piso cerâmico neutro" loading="lazy" width="600" height="450"></span>
+              <span class="categoria__corpo">
+                <strong>Cerâmicas</strong>
+                <span>Versatilidade de estilos para o dia a dia da casa.</span>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a class="categoria" href="#produtos" data-categoria="revestimentos">
+              <span class="categoria__foto"><img data-img="revestimentos" alt="Parede revestida com acabamento decorativo" loading="lazy" width="600" height="450"></span>
+              <span class="categoria__corpo">
+                <strong>Revestimentos de parede</strong>
+                <span>Texturas e relevos para paredes com personalidade.</span>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a class="categoria" href="#produtos" data-categoria="externos">
+              <span class="categoria__foto"><img data-img="externos" alt="Área externa com piso de aparência natural" loading="lazy" width="600" height="450"></span>
+              <span class="categoria__corpo">
+                <strong>Pisos para áreas externas</strong>
+                <span>Opções pensadas para varandas, quintais e áreas de lazer.</span>
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================= CATÁLOGO ================= -->
+    <section class="secao secao--cinza" id="produtos" aria-labelledby="produtos-titulo">
+      <div class="container">
+        <header class="secao__cabecalho">
+          <p class="sobretitulo sobretitulo--escuro">Catálogo</p>
+          <h2 id="produtos-titulo">Nossos produtos</h2>
+          <p>Produtos fictícios de demonstração. Use os filtros e a busca para encontrar o que combina com o seu projeto.</p>
+        </header>
+
+        <div class="ferramentas">
+          <div class="filtros" id="filtros" role="group" aria-label="Filtrar por categoria"></div>
+
+          <form class="busca" id="busca-form" role="search" novalidate>
+            <label class="busca__rotulo" for="busca-campo">Pesquisar produto pelo nome</label>
+            <div class="busca__linha">
+              <input class="busca__campo" id="busca-campo" type="search" placeholder="Ex.: Calacatta, madeira, deck..." autocomplete="off" enterkeyhint="search">
+              <button class="btn btn--secundario" id="busca-limpar" type="button">Limpar</button>
+            </div>
+          </form>
+        </div>
+
+        <p class="contador" id="contador" role="status" aria-live="polite"></p>
+
+        <div class="produtos" id="produtos-lista"></div>
+
+        <div class="vazio" id="mensagem-vazia" hidden>
+          <h3>Nenhum produto encontrado</h3>
+          <p>Não encontramos resultados para essa pesquisa. Tente outro nome ou volte a mostrar todos os produtos.</p>
+          <button class="btn btn--primario" id="mostrar-todos" type="button">Mostrar todos os produtos</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SOBRE NÓS ================= -->
+    <section class="secao" id="sobre" aria-labelledby="sobre-titulo">
+      <div class="container sobre">
+        <div class="sobre__texto">
+          <p class="sobretitulo sobretitulo--escuro">Sobre nós</p>
+          <h2 id="sobre-titulo">Cada ambiente começa com uma boa escolha</h2>
+          <p>Na Vértice, acreditamos que cada ambiente começa com uma boa escolha. Reunimos opções de pisos e revestimentos para ajudar você a transformar ideias em espaços que combinam beleza, funcionalidade e personalidade.</p>
+        </div>
+
+        <ul class="diferenciais">
+          <li class="diferencial">
+            <span class="diferencial__numero" aria-hidden="true">01</span>
+            <h3>Seleção para cada estilo</h3>
+            <p>Seleção de produtos para diferentes estilos de projeto.</p>
+          </li>
+          <li class="diferencial">
+            <span class="diferencial__numero" aria-hidden="true">02</span>
+            <h3>Atendimento na escolha</h3>
+            <p>Atendimento para ajudar na escolha dos revestimentos.</p>
+          </li>
+          <li class="diferencial">
+            <span class="diferencial__numero" aria-hidden="true">03</span>
+            <h3>Variedade de opções</h3>
+            <p>Variedade de opções para ambientes internos e externos.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================= CONTATO ================= -->
+    <section class="secao secao--escura" id="contato" aria-labelledby="contato-titulo">
+      <div class="container contato">
+        <div class="contato__chamada">
+          <p class="sobretitulo">Contato</p>
+          <h2 id="contato-titulo">Vamos conversar sobre o seu projeto?</h2>
+          <p>Fale com a nossa equipe, conte o que você está planejando e receba ajuda para escolher o piso ou o revestimento ideal.</p>
+          <div class="contato__botoes">
+            <a class="btn btn--primario" href="#contato" data-whatsapp="geral">Chamar no WhatsApp</a>
+            <a class="btn btn--contorno-claro" id="link-mapa" href="#contato" target="_blank" rel="noopener noreferrer">Ver no Google Maps</a>
+          </div>
+          <p class="contato__aviso" id="aviso-whatsapp" hidden></p>
+        </div>
+
+        <div class="contato__cartoes">
+          <article class="cartao-info">
+            <h3>Endereço</h3>
+            <address>Avenida dos Autonomistas, 2500<br>Centro, Osasco — SP</address>
+          </article>
+          <article class="cartao-info">
+            <h3>Horário de funcionamento</h3>
+            <ul class="horarios">
+              <li><span>Segunda a sexta-feira</span><strong>8h às 18h</strong></li>
+              <li><span>Sábado</span><strong>8h às 14h</strong></li>
+              <li><span>Domingo</span><strong>Fechado</strong></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= RODAPÉ ================= -->
+  <footer class="rodape">
+    <div class="container rodape__grade">
+      <div class="rodape__marca">
+        <a class="marca marca--clara" href="#inicio" aria-label="Vértice Pisos & Revestimentos - voltar ao início">
+          <svg class="marca__logo" width="44" height="44" aria-hidden="true"><use href="#logo-vertice"></use></svg>
+          <span class="marca__texto">
+            <strong>Vértice</strong>
+            <small>Pisos & Revestimentos</small>
+          </span>
+        </a>
+        <p>Seu projeto começa pelo chão.</p>
+      </div>
+
+      <nav aria-label="Links do rodapé">
+        <h3>Navegação</h3>
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#produtos">Produtos</a></li>
+          <li><a href="#sobre">Sobre Nós</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div>
+        <h3>Contato</h3>
+        <p>Avenida dos Autonomistas, 2500<br>Centro, Osasco — SP</p>
+        <p><a href="#contato" data-whatsapp="geral">Falar pelo WhatsApp</a></p>
+      </div>
+
+      <div>
+        <h3>Horário</h3>
+        <p>Segunda a sexta: 8h às 18h<br>Sábado: 8h às 14h<br>Domingo: fechado</p>
+      </div>
+    </div>
+
+    <div class="container rodape__base">
+      <p>&copy; <span id="ano">2026</span> Vértice Pisos & Revestimentos. Todos os direitos reservados.</p>
+      <p class="rodape__aviso">Site de demonstração com empresa e produtos fictícios.</p>
+    </div>
+  </footer>
+
+  <!-- Aviso temporário (usado quando o WhatsApp ainda não foi configurado) -->
+  <div class="aviso" id="aviso" role="status" aria-live="polite" hidden></div>
+
+</body>
+</html>
